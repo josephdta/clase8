@@ -7,27 +7,34 @@
     font-family: "Roboto",sans-serif;
 }
 
-header{
-    width: 100%;
-    background-color: #222222;
-    height: 100px;
+body{
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F3F3F3
+}
+.container{
+    flex: 1;
+}
+header{
+
+    background-color: #222222;
+    /* height: 100px; */
+    padding: 10px;
+    display: flex;
     justify-content: space-between;
     color: #fff;
+    align-items: center;
 }
 
 .pizza-1{
+    display: flex;
     align-items: center;
     width: 234px;
     height: 80px;
-    padding: -5px;
+    padding: 16px;
     font-size: 24px;
-}
-
-.pizza-logo{
-    align-items: center;
-    margin-left: 20px;
 }
 
 .pizza-green{
@@ -42,22 +49,83 @@ header{
     font-weight: bold;
 }
 
-.pizza-2{
-    font-size: 16px;
-    display: flex;
-    width: 284px;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
+.barra{
+    padding: 0 0 0 16px;
 }
 
-ul{
+
+nav ul{
     list-style: none;
-    top: 40px;
-    left: 720px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
 }
 
-ul li{
-    display: inline-block;
+.items-menu{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+footer{
+    background-color: #222222;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.pizza4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+}
+ main{
+    min-height: 75vh;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
+
+.cajaizquierda{
+    padding: 16px;
+    width: 490px;
+    height: 350px;
+    background-image: url(../img/delivery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.cajaderecha{
+    padding: 16px;
+    width: 490px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto1{
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.texto2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
